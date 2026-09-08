@@ -10,6 +10,8 @@ type Lang = 'hant' | 'hans'
 
 const content = {
   hant: {
+    establishment: '金橋百信律師事務所',
+    orientation: '深圳律師事務所',
     langLabel: '简体中文',
     nav: {
       about: '關於我們',
@@ -208,10 +210,10 @@ function Header({
         <div className="flex items-center justify-between gap-3 py-4">
           <div className="flex items-center gap-2">
             <span className="text-lg font-semibold tracking-wide text-[#e8c76b]">
-              金橋百信
+              {t.establishment}
             </span>
             <span className="hidden text-sm text-white/50 sm:inline">
-              深圳律師事務所
+              {t.orientation}
             </span>
           </div>
           <nav className="hidden gap-8 text-sm text-white/80 lg:flex">
@@ -230,14 +232,14 @@ function Header({
           </nav>
           <div className="flex shrink-0 items-center gap-2">
             <a
-              href="tel:+86 186 8921 1926"
-              aria-label="內地：+86 186 8921 1926"
+              href="tel:+86 199 2411 7792"
+              aria-label="內地：+86 199 2411 7792"
               className="flex h-8 w-8 shrink-0 items-center justify-center whitespace-nowrap rounded-md border border-white/35 bg-transparent p-0 text-sm text-white/80 shadow-[0_2px_10px_rgba(255,255,255,0.08)] transition hover:border-[#e8c76b] hover:text-[#e8c76b] hover:shadow-[0_0_12px_rgba(232,199,107,0.45)] min-[550px]:h-auto min-[550px]:w-auto min-[550px]:justify-start min-[550px]:gap-1.5 min-[550px]:px-4 min-[550px]:py-1.5"
             >
               <i aria-hidden="true" className="not-italic text-base leading-none">
                 ☎
               </i>
-              <span className="whitespace-nowrap max-[550px]:hidden">内地：+86 186 8921 1926</span>
+              <span className="whitespace-nowrap max-[550px]:hidden">内地：+86 199 2411 7792</span>
             </a>
             <button
               type="button"
@@ -265,14 +267,14 @@ function Header({
           className={`${menuOpen ? 'flex' : 'hidden'} flex-col gap-2 border-t border-[#c9a24b]/20 py-4 text-sm text-white/80 lg:hidden`}
         >
           <a
-            href="tel:+86 186 8921 1926"
-            aria-label="內地：+86 186 8921 1926"
+            href="tel:+86 199 2411 7792"
+            aria-label="內地：+86 199 2411 7792"
             className="flex w-fit items-center gap-1.5 whitespace-nowrap rounded-md border border-white/35 bg-transparent px-4 py-1.5 text-sm text-white/80 shadow-[0_2px_10px_rgba(255,255,255,0.08)] transition hover:border-[#e8c76b] hover:text-[#e8c76b] hover:shadow-[0_0_12px_rgba(232,199,107,0.45)]"
           >
             <i aria-hidden="true" className="not-italic text-base leading-none">
               ☎
             </i>
-            <span className="whitespace-nowrap">内地：+86 186 8921 1926</span>
+            <span className="whitespace-nowrap">内地：+86 199 2411 7792</span>
           </a>
           <a
             href="#about"
